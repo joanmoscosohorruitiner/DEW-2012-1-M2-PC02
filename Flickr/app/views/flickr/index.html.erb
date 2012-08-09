@@ -1,0 +1,16 @@
+<% form_remote_tag :url => {:action => 'search'}, :update => 'photos',
+    :complete => visual_effect(:blind_down, 'photos'),
+    :before   => %(Element.show('spinner')),
+    :success  => %(Element.hide('spinner')) do %>
+
+    <%= image_tag 'spinner.gif', :id => 'spinner', :style => 'display: none' %>
+    <fieldset>
+        <label for="tags">Tags:</label>
+        <%= text_field_tag 'tags' %>
+
+        <%= submit_tag 'Find' %>
+    </fieldset>
+
+    <div id="photos" style="display: none"></div>
+
+<% end %>

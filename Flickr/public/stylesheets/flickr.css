@@ -1,0 +1,48 @@
+/* 
+    Document   : flickr
+    Created on : 09/08/2012, 05:14:48 AM
+    Author     : USER
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+body {
+    background-color: #888;
+    font-family: Lucida Grande;
+    font-size: 11px;
+    margin: 25px;
+}
+
+form {
+    margin: 0;
+    margin-bottom: 10px;
+    background-color: rgb(222,231,236);
+    border: 5px solid #333;
+    padding: 25px;
+}
+
+
+fieldset {
+    border: none;
+}
+
+#spinner {
+    float: right;
+    margin: 10px;
+}
+
+#photos img {
+    border: 1px solid #000;
+    width: 75px;
+    height: 75px;
+    margin: 5px;
+}
